@@ -20,7 +20,7 @@ public class Producto extends Base {
     @Column(name="nombreProducto")
     private String nombreProducto;
 
-    @Column(name="descripcionProducto")
+    @Column(name="descripcionProducto",columnDefinition = "TEXT")
     private String descripcionProducto;
 
     @Column(name="precioProducto")
