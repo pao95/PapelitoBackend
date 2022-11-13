@@ -26,6 +26,9 @@ public class Producto extends Base {
     @Column(name="precioProducto")
     private Float precioProducto;
 
+    @Column(name="imageProducto")
+    private String imageProducto;
+
     @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "fk_categoria")
     private Categoria categoria;
