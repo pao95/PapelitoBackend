@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @CrossOrigin(origins = "*")
 @RequestMapping(path = "api/v1/categorias")
-public class CategoriaController extends BaseControllerImpl<Categoria, CategoriaServiceImpl> {
+public class    CategoriaController extends BaseControllerImpl<Categoria, CategoriaServiceImpl> {
 
 }
