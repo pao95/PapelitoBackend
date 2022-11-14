@@ -22,6 +22,9 @@ public class Provincia extends Base {
     @Column(name = "nombreProvincia")
     private String nombreProvincia;
 
+    @Column(name="codProvincia")
+    private Integer codProvincia;
+
 
   /*  @OneToMany(mappedBy = "fk_provincia", cascade = CascadeType.ALL, orphanRemoval = true)
       private List<Ciudad> ciudadList = new ArrayList<Ciudad>();*/

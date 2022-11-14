@@ -29,6 +29,12 @@ public class Producto extends Base {
     @Column(name="imageProducto")
     private String imageProducto;
 
+    @Column(name="destacado")
+    private Boolean destacado;
+
+    @Column(name="oferta")
+    private Boolean oferta;
+
     @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "fk_categoria")
     private Categoria categoria;
