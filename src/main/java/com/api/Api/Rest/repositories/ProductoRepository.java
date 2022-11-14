@@ -1,5 +1,6 @@
 package com.api.Api.Rest.repositories;
 
+import com.api.Api.Rest.entities.PedidoEstado;
 import com.api.Api.Rest.entities.Producto;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -33,4 +34,10 @@ public interface ProductoRepository extends BaseRepository<Producto,Long> {
             nativeQuery = true
     )
     Page<Producto> ProductosPorNombre(@Param("nombre") String nombre, Pageable pageable);
+
+
+    List<Producto> findByDestacado(Boolean vigente);
+    List<Producto> findByOferta(Boolean vigente);
+
+
 }
